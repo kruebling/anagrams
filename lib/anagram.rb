@@ -6,8 +6,8 @@ class Words
       return "for this to work, you must use a real word!"
     end
 
-    wordArr1 = w1.downcase.split(//).sort
-    wordArr2 = w2.downcase.split(//).sort
+    wordArr1 = w1.downcase.gsub(/\s+/, "").split(//).sort
+    wordArr2 = w2.downcase.gsub(/\s+/, "").split(//).sort
     if (wordArr1 != wordArr2)
       return "these words are antigrams"
     end

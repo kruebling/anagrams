@@ -8,6 +8,10 @@ describe('Words#anagrams') do
     expect(ex.anagrams("hello", "rd")).to(eq("for this to work, you must use a real word!"))
   end
 
+  it('checks multiples words in the input') do
+    expect(ex.anagrams("race car", "car race")).to(eq("these words are anagrams"))
+  end
+
   it('checks to see if two words are anagrams') do
     expect(ex.anagrams("hello", "olleh")).to(eq("these words are anagrams"))
   end
