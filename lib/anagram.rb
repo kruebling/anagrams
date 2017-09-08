@@ -7,7 +7,7 @@ class Anagram
     wordArr2 = w2.downcase.split(//).sort
 
       if (wordArr1 == wordArr2)
-        true
+        return "these words are anagrams"
       end
   end
 end
