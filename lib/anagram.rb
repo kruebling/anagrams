@@ -8,11 +8,15 @@ class Words
         return "these words are anagrams"
       end
   end
+
   def palindromes(w1, w2)
     word_pal1 = w1.downcase
     word_pal2 = w2.downcase
     if word_pal1 == word_pal1.reverse
-      return "this word is a palindrome"
+      return "your first word is a palindrome"
+    end
+    if word_pal2 == word_pal2.reverse
+      return "your second word is a palindrome"
     end
   end
 end

@@ -17,8 +17,12 @@ end
 describe('Words#palindromes') do
   ex = Words.new()
 
-  it('checks to see if either of the words are palindromes') do
-    expect(ex.palindromes("Anna", "Anlo")).to(eq("this word is a palindrome"))
+  it('checks to see if your first word is a palindrome') do
+    expect(ex.palindromes("Anna", "Anlo")).to(eq("your first word is a palindrome"))
+  end
+
+  it('checks to see if your second word is a palindrome') do
+    expect(ex.palindromes("AnLo", "Anna")).to(eq("your second word is a palindrome"))
   end
 
 end
