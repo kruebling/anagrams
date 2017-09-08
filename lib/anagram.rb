@@ -1,13 +1,12 @@
 #!/usr/bin/env ruby
 
 
-class Word
-  def anagram(word)
-    wordArr = word.split(//)
+class Anagram
+  def anagrams(w1, w2)
+    wordArr1 = w1.split(//).sort
+    wordArr2 = w2.split(//).sort
+      if (w1 == w2)
+        puts "these words are anagrams"
+      end
   end
-  # def anagram
-  #   @word1 =
-  #   @word2 = gets.chomp
-  # end
-
 end
