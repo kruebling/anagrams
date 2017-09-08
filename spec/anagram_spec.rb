@@ -4,6 +4,10 @@ require('anagram')
 describe('Words#anagrams') do
   ex = Words.new()
 
+  it('checks to see if either of the words are real') do
+    expect(ex.anagrams("hello", "rd")).to(eq("for this to work, you must use a real word!"))
+  end
+
   it('checks to see if two words are anagrams') do
     expect(ex.anagrams("hello", "olleh")).to(eq("these words are anagrams"))
   end
