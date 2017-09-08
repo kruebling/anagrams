@@ -16,6 +16,10 @@ describe('Words#anagrams') do
     expect(ex.anagrams("HeLlo", "oLlEh")).to(eq("these words are anagrams"))
   end
 
+  it('checks to see if the two words are antigrams') do
+    expect(ex.anagrams("hello", "cat")).to(eq("these words are antigrams"))
+  end
+
 end
 
 describe('Words#palindromes') do

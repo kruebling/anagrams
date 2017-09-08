@@ -2,17 +2,22 @@
 
 class Words
   def anagrams(w1, w2)
-    if w1.scan(/[aeiou]/).count === 0 || w2.scan(/[aeiou]/).count === 0
+    if w1.scan(/[aeiouy]/).count === 0 || w2.scan(/[aeiouy]/).count === 0
       return "for this to work, you must use a real word!"
     end
-    
+
     wordArr1 = w1.downcase.split(//).sort
     wordArr2 = w2.downcase.split(//).sort
-      if (wordArr1 == wordArr2)
-        return "these words are anagrams"
-      else
-        return "these words are not anagrams"
-      end
+    if (wordArr1 != wordArr2)
+      return "these words are antigrams"
+    end
+
+    if (wordArr1 == wordArr2)
+      return "these words are anagrams"
+    else
+      return "these words are not anagrams"
+    end
+
   end
 
   def palindromes(w1, w2)
