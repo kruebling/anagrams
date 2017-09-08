@@ -13,7 +13,7 @@ describe('Words#anagrams') do
   end
 
   it('checks to see if two words are anagrams') do
-    expect(ex.anagrams("hello", "olleh")).to(eq("these words are anagrams"))
+    expect(ex.anagrams("eat", "tea")).to(eq("these words are anagrams"))
   end
 
   it('checks to see if two words are anagrams even if their case is different') do
