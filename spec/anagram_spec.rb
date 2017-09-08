@@ -1,11 +1,11 @@
 require('rspec')
 require('anagram')
 
-describe('#shifter') do
-  ex = Prime.new()
+describe('Anagram#anagrams') do
+  ex = Anagram.new()
 
-  it('makes array of prime numbers up to input value') do
-    expect(ex.shifter(7)).to(eq([2, 3, 5, 7]))
+  it('checks to see if two words are anagrams') do
+    expect(ex.anagrams("hello", "olleh")).to(eq(true))
   end
 
 end
